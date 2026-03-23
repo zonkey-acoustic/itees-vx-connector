@@ -10,7 +10,7 @@ ProTee Labs software sends shot data (ball speed, spin, launch angle, club data)
 
 ## Quick Start
 
-1. **Download** `VxProxy.exe` from the latest release (or build from source — see below).
+1. **Download** `VxProxy.exe` from the [latest release](https://github.com/zonkey-acoustic/itees-vx-connector/releases/latest) (or build from source — see below).
 
 2. **Launch VX Connector first** — double-click `VxProxy.exe`. It starts in the system tray with an orange icon (waiting for connections).
 
