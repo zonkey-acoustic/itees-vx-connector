@@ -1,6 +1,6 @@
 # VX Connector
 
-A Windows proxy that connects your **ProTee VX** launch monitor to **Infinite Tees** by relaying shot data through the GSPro OpenConnect API protocol.
+A unofficial Windows proxy that connects your **ProTee VX** launch monitor to **Infinite Tees** by relaying shot data through the OpenConnect API protocol.
 
 ```
 ProTee VX  →  ProTee Labs Software  →  VX Connector (:921)  →  Infinite Tees (:999)
@@ -16,7 +16,7 @@ ProTee Labs software sends shot data (ball speed, spin, launch angle, club data)
 
 3. **Launch Infinite Tees** — once it's running, VX Connector will automatically connect to it on port 999.
 
-4. **Launch ProTee Labs** — open the ProTee VX software and go to **Game Options → GSPro**, then hit **Connect**. ProTee Labs will connect to VX Connector on port 921.
+4. **Launch ProTee Labs** — open the ProTee VX software and go to **Game Options**, **Game:GSPro** then hit **Connect**. ProTee Labs will connect to VX Connector on port 921.
 
 5. **Hit shots** — the tray icon turns green when both ProTee Labs and Infinite Tees are connected. Shot data flows automatically.
 
@@ -49,7 +49,7 @@ The published exe is at `dotnet/bin/Release/net8.0-windows/win-x64/publish/VxPro
 
 ## How It Works
 
-ProTee Labs software communicates with sim applications using the **GSPro OpenConnect API** — newline-terminated JSON over raw TCP. Each shot arrives as a sequence of messages:
+ProTee Labs software communicates with sim applications using the **OpenConnect API** — newline-terminated JSON over raw TCP. Each shot arrives as a sequence of messages:
 
 1. Status: ready, ball detected
 2. Ball data only (speed, spin, launch angle)
@@ -80,6 +80,9 @@ This modifies `Port` in `%LOCALAPPDATA%\InfiniteTees\Saved\Config\Windows\GameUs
 
 With port 921, launch Infinite Tees first, then open ProTee Labs and hit **Connect** — it will connect directly to Infinite Tees without needing the proxy.
 
+## Note: ## 
+
+This unofficial integration is community-developed and provided as-is, without official support from the respective brands.
 
 ## License
 
