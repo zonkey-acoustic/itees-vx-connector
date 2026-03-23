@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.spec
+.env
+.venv/
+venv/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+publish/
+
+# Build output
+dist/
+build/
+
+# Project
+CLAUDE.md
+/testing
+/samples
